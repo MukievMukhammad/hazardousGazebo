@@ -1,0 +1,28 @@
+<launch>
+
+<arg name="world_name" default="$(find gazebo_usar_core)/worlds/example1.world"/>
+
+<include file="$(find gazebo_ros)/launch/empty_world.launch">
+	<arg name="world_name" value="$(arg world_name)"/>
+	<arg name="paused" value="false"/>
+	<arg name="use_sim_time" value="true"/>
+	<arg name="gui" value="true"/>
+	<arg name="headless" value="false"/>
+	<arg name="debug" value="false"/>
+	</include>
+
+<group ns="Husky1">
+ <arg name="tf_prefix" value="Husky1"/>
+ <param name="tf_prefix" value="Husky1"/>
+ <include file="$(find multihusky_gazebo)/launch/spawn_multihusky.launch">
+  	<arg name="robot_namespace" value="Husky1"/>
+  	<arg name="laser_enabled" value="true"/>
+  	<arg name="kinect_enabled" value="false"/>
+  	<arg name="x" value="45"/>
+  	<arg name="y" value="27"/>
+  	<arg name="z" value="3"/>
+ </include>
+ <node pkg="tf" type="static_transform_publisher" name="map_odom_broadcaster" args="45 27 3 0 0 0 /map /$(arg tf_prefix)/odom 500" />
+</group>
+
+</launch>

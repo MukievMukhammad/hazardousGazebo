@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<sdf version='1.5'>
+  <model name='example_surface'>
+    <static>true</static>
+    <link name='body'>
+      <visual name='visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>file://example_surface/meshes/terrain.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision1">
+        <geometry>
+          <mesh>
+            <uri>file://example_surface/meshes/terrain.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

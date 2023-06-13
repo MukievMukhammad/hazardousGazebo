@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>hazardous_zones</name>
+  <version>0.0.1</version>
+  <description>The hazardous_zones package</description>
+
+  <maintainer email="kmpchk@gmail.com">Abbyasov Bulat</maintainer>
+  <author email="kmpchk@gmail.com">Abbyasov Bulat</author>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+  
+</package>

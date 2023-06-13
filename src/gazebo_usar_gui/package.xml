@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>gazebo_usar_gui</name>
+  <version>0.2.1</version>
+  <description>The gazebo_usar_gui package handles contamination data and visualizes contamination widgets within Gazebo</description>
+  <maintainer email="kmpchk@gmail.com">Bulat Abbyasov</maintainer>
+  <license>BSD</license>
+  <url type="repository">https://gitlab.com/LIRS_Projects/microsimulator</url>
+  <author email="kmpchk@gmail.com">Bulat Abbyasov</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>gazebo_dev</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>gazebo_usar_core</build_depend>
+  <build_depend>qtbase5-dev</build_depend>
+  <build_depend>boost</build_depend>
+
+  <exec_depend>gazebo</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>gazebo_usar_core</exec_depend>
+  <exec_depend>qtbase5-dev</exec_depend>
+  <exec_depend>boost</exec_depend>
+
+  <doc_depend>doxygen</doc_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

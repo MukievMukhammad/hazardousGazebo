@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>gazebo_usar_core</name>
+  <version>0.2.1</version>
+  <description>The gazebo_usar_core package imitates contamination influences and handles them</description>
+  <maintainer email="kmpchk@gmail.com">Bulat Abbyasov</maintainer>
+  <license>BSD</license>
+  <url type="repository">https://gitlab.com/LIRS_Projects/microsimulator</url>
+  <author email="kmpchk@gmail.com">Bulat Abbyasov</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>move_base_msgs</depend>
+  <depend>std_msgs</depend>
+
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>gazebo_dev</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>pcl_conversions</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>boost</build_depend>
+
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>gazebo_dev</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>actionlib</exec_depend>
+  <exec_depend>pcl_conversions</exec_depend>
+  <exec_depend>pcl_ros</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>dynamic_reconfigure</exec_depend>
+  <exec_depend>boost</exec_depend>
+  <exec_depend>rviz</exec_depend>
+
+  <doc_depend>doxygen</doc_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+    <gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}" />
+  </export>
+</package>

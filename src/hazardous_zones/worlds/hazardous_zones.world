@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+    <world name="default">
+
+        <include>
+            <uri>model://sun</uri>
+        </include>
+
+        <scene>
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <shadows>0</shadows>
+        </scene>
+
+        <model name="my_mesh">
+            <static>true</static>
+            <link name="body">
+                <visual name="visual">
+                    <pose frame="">0 0 0 0 0 0</pose>
+                    <geometry>
+                        <mesh>
+                            <uri>file:///home/mukiev/catkin_ws/src/hazardous_zones/worlds/map4.dae</uri>
+                        </mesh>
+                    </geometry>
+                </visual>
+                <collision name="collision1">
+                    <geometry>
+                        <mesh>
+                            <uri>file:///home/mukiev/catkin_ws/src/hazardous_zones/worlds/map4.dae</uri>
+                        </mesh>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
+
+        <!-- Gazebo GUI Plugin -->
+        <gui name="gazebo_usar_gui">
+            <plugin name="gazebo_usar_gui" filename="libgazebo_usar_gui.so">
+                <robots>husky</robots>
+            </plugin>
+        </gui>
+
+        <!-- Gazebo CORE Plugin -->
+        <plugin name="gazebo_usar_core" filename="libgazebo_usar_core.so">
+            <robots>husky</robots>
+        </plugin>
+
+        <!-- Radiation zone example -->
+        <!-- <model name="rad_zone_1">
+            <pose>5 7 3 0 0 0</pose>
+            <frame name="data">
+                <pose>3 0 0 0 0 0</pose>
+            </frame>
+        </model> -->
+
+        <!-- Chemical contamination zone example -->
+        <!-- <model name="chemical_zone_1">
+            <pose>12 7.6 2.5 0 0 0</pose>
+            <frame name="data">
+                <pose>2 2 4 0 0 0</pose>
+            </frame>
+        </model> -->
+    </world>
+</sdf>

@@ -1,0 +1,230 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+<world name="default">
+<include>
+<uri>model://sun</uri>
+</include>
+<scene>
+<ambient>0.0 0.0 0.0 1.0</ambient>
+<shadows>0</shadows>
+</scene>
+<include>
+      <uri>file://example_surface</uri>
+      <name>example_surface</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+  <model name="osrf_first_office">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://osrf_first_office/meshes/osrf_first_office.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://osrf_first_office/meshes/osrf_first_office.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+<pose>13.500 27.500 2.300 0.000 0.000 1.300</pose>
+  </model>
+  <model name="radio_tower">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://radio_tower/meshes/radio_tower.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://radio_tower/meshes/radio_tower.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+<pose>88.000 29.500 0.000 0.000 0.000 0.000</pose>
+  </model>
+  <model name="collapsed_house">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>1.5 1.5 1.5</scale>
+            <uri>model://collapsed_house/meshes/collapsed_house.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1.5 1.5 1.5</scale>
+            <uri>model://collapsed_house/meshes/collapsed_house.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+<pose>66.000 56.500 2.000 0.000 0.000 0.000</pose>
+  </model>
+  <model name="collapsed_fire_station">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://collapsed_fire_station/meshes/collapsed_fire_station.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://collapsed_fire_station/meshes/collapsed_fire_station.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+<pose>39.500 62.500 2.000 0.000 0.000 0.000</pose>
+  </model>
+  <model name="water_tower">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://water_tower/meshes/water_tower.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://water_tower/meshes/water_tower.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+<pose>15.500 68.000 0.000 0.000 0.000 0.000</pose>
+  </model>
+  <model name="oak_tree">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://oak_tree/meshes/oak_tree.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="branch">
+        <geometry>
+          <mesh>
+            <uri>model://oak_tree/meshes/oak_tree.dae</uri>
+            <submesh>
+              <name>Branch</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://oak_tree/materials/scripts/</uri>
+            <uri>model://oak_tree/materials/textures/</uri>
+            <name>OakTree/Branch</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="bark">
+        <geometry>
+          <mesh>
+            <uri>model://oak_tree/meshes/oak_tree.dae</uri>
+            <submesh>
+              <name>Bark</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://oak_tree/materials/scripts/</uri>
+            <uri>model://oak_tree/materials/textures/</uri>
+            <name>OakTree/Bark</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+<pose>83.700 57.500 1.700 0.000 0.000 0.000</pose>
+  </model>
+  <model name="hatchback_red">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <pose>0 0 0 0 0 1.57079632679</pose>
+        <geometry>
+          <mesh>
+            <scale>0.0254 0.0254 0.0254</scale>
+            <uri>model://hatchback_red/meshes/hatchback.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 0 0 0 0 1.57079632679</pose>
+        <geometry>
+          <mesh>
+            <scale>0.0254 0.0254 0.0254</scale>
+            <uri>model://hatchback_red/meshes/hatchback.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+<pose>19.000 49.500 1.700 0.000 0.000 0.000</pose>
+  </model>
+
+<model name="rad_zone_1">	
+  <pose>45.0 20.0 3.0 0.0 0.0 0.0</pose>
+  <frame name="data">
+     <pose>4 0 0 0 0 0</pose>
+  </frame>
+</model>
+
+<model name="rad_zone_2">
+	<pose>7.0 9.0 3.0 0.0 0.0 0.0</pose>
+	<frame name="data">
+		<pose>3.5 0 0 0 0 0</pose>
+	</frame>
+</model>
+
+<model name="chemical_zone_1">
+	<pose>55.0 7.0 3.0 0.0 0.0 0.0</pose>
+	<frame name="data">
+		<pose>4.5 7.0 1.0 0.0 0.0 0.0</pose>
+	</frame>
+</model>
+
+<model name="chemical_zone_2">
+	<pose>25.0 17.0 3.0 0.0 0.0 0.0</pose>
+	<frame name="data">
+		<pose>1.5 3.0 1.0 0.0 0.0 0.0</pose>
+	</frame>
+</model>
+
+<gui name="gazebo_usar_gui">
+<plugin name="gazebo_usar_gui" filename="libgazebo_usar_gui.so">
+	<robots>Husky1;Husky2</robots>
+</plugin>
+</gui>
+
+<plugin name="gazebo_usar_core" filename="libgazebo_usar_core.so">
+  <robots>Husky1;Husky2</robots>
+</plugin>
+
+</world>
+</sdf>
