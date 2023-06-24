@@ -3,7 +3,7 @@
 ### RViz & Gazebo
 ![1](https://github.com/MukievMukhammad/hazardousGazebo/assets/42972450/23f268b9-6675-4303-82d3-7b2a17ada191)
 ### Gas propogation simulation in RViz
-https://youtu.be/-cnFyk64-_k
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-cnFyk64-_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Getting started
 
